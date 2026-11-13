@@ -22,7 +22,7 @@ const uncategorized = apps.filter(([slug]) => !appCategories.some(([, slugs]) =>
 if (uncategorized.length) throw new Error(`Add to appCategories in src/data/apps.mjs: ${uncategorized.map(([slug]) => slug).join(', ')}`);
 
 export const thirdPartyApps = [
-  ['solidcraft', 'SolidCraft', 'png'], ['mailcraft', 'MailCraft', 'png'],
+  ['solidcraft', 'SolidCraft', 'png'], ['mailcraft', 'MailCraft', 'png'], ['sketchcraft', 'SketchCraft', 'png'],
 ];
 
 export const allApps = [...apps, ...thirdPartyApps];
