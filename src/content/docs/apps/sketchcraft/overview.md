@@ -15,11 +15,13 @@ SketchCraft is an open-source push/pull 3D modeler written in Rust. Draw an outl
 
 ## Features
 
-- **Push/pull modeling**: Lines that split edges, cut faces and close into faces; rectangles, circles, polygons, arcs and offsets; push/pull that carves windows and doors into walls; Follow Me sweeps for trim and cornices; auto-fold when a move bends a face.
-- **Inference and exact input**: Snaps to endpoints, midpoints, edges, faces, guides and the red/green/blue axes, with From Point alignment and arrow-key axis locks. Type a number and press Enter for exact lengths, sizes, angles and arrays.
-- **Organize and document**: Groups and components (edit one, every copy updates), tags, hide/unhide, dimensions and text labels, saved views, section cuts, X-ray, shadows and parallel projection.
-- **Built-in library and interoperability**: Doors, windows, garage doors, trees, palms, cars, streetlights, benches and hydrants. glTF (.glb), OBJ and STL export, OBJ import, and headless PNG renders.
-- **Automated & agentic control**: Every action is a JSON command, scriptable through the CLI, a JSON-over-stdio channel, or a Model Context Protocol (MCP) server. An AI agent and a person can edit the same live model at the same time.
+- **Push/pull modeling**: Lines that split edges, cut faces and close into faces; rectangles (also rotated), circles, polygons, arcs (2-point, center, 3-point and pie), freehand, offsets; push/pull that carves windows and doors into walls; Follow Me sweeps; Solid Tools (union, subtract, intersect, trim, split) and Intersect Faces.
+- **Inference and exact input**: Snaps to endpoints, midpoints, edges, faces, guides and the red/green/blue axes (which the Axes tool can turn), with From Point alignment and arrow-key axis locks. Type a number and press Enter for exact lengths, sizes, angles and arrays. Shift+S searches every command.
+- **Organize and document**: Groups and components (edit one, every copy updates; doors and windows cut their opening in the wall), Dynamic Components with Component Options, tags, scenes that remember their style, named section planes, dimensions, labels, drawing sheets and blueprints as PDF.
+- **Buildings and sites**: Walls, stairs and roofs; **Raise walls** turns an imported floor plan into 3D walls with window openings; terrain (Sandbox) and Add Location for real terrain and map imagery; point clouds (PLY, LAS, XYZ) to model over a scan.
+- **Presenting**: Styles (sketchy, hidden line, blueprint and more), Match Photo, physically based finishes, a photoreal path-traced renderer, and a timeline for turntables, walkthroughs and sun studies exported as MP4.
+- **Files**: Opens SketchUp (.skp), AutoCAD DWG and DXF, IFC (Revit and ArchiCAD exports), FBX and OBJ. Exports glTF, OBJ, Collada, STL, DXF, DWG, PDF and IFC.
+- **Automated and agentic control**: Every action is a JSON command, scriptable through the CLI or a Model Context Protocol (MCP) server. An AI agent and a person can edit the same live model at the same time.
 
 ## Documentation guides
 

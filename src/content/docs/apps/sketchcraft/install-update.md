@@ -39,6 +39,13 @@ The engine also ships on its own as `sketchcraft`, with no window. It runs scrip
 sketchcraft run house.jsonl --save house.sketchcraft
 ```
 
+## Optional: DWG and IFC files
+
+SketchCraft reads and writes DXF on its own. Two formats use a free helper you install once:
+
+- **DWG (AutoCAD)**: install [LibreDWG](https://www.gnu.org/software/libredwg/) (on macOS: `brew install libredwg`) or the free ODA File Converter. SketchCraft finds either automatically.
+- **IFC (Revit, ArchiCAD)**: SketchCraft uses [IfcOpenShell](https://ifcopenshell.org). If it isn't installed, opening an IFC file shows the two Terminal commands that set it up.
+
 ## Build from source
 
 You need Rust (stable) and Node.js 22.
