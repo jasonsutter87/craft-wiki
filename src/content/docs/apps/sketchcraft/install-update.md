@@ -11,7 +11,13 @@ SketchCraft is an independent open-source modeler maintained by Jason Sutter and
 
 ## Downloads
 
-Every build is on the [latest release](https://github.com/jasonsutter87/sketchcraft/releases/latest) page. To update, download the newest release and install it over the old one. Your models are `.sketchcraft` files and stay where you saved them.
+Every build is on the [latest release](https://github.com/jasonsutter87/sketchcraft/releases/latest) page.
+
+## Updates
+
+From version 0.3.3, SketchCraft updates itself. A few seconds after it opens, it checks for a new version and offers **Update and restart**; updates are signed and checked before they install. **Check for updates…** in the File menu checks right away. Your models are `.sketchcraft` files and stay where you saved them.
+
+On an older version, download the newest release once and install it over the old one.
 
 ## macOS
 
@@ -43,10 +49,10 @@ sketchcraft run house.jsonl --save house.sketchcraft
 
 SketchCraft reads and writes DXF on its own. Two formats use a free helper you install once:
 
-- **DWG (AutoCAD)**: install [LibreDWG](https://www.gnu.org/software/libredwg/) (on macOS: `brew install libredwg`) or the free ODA File Converter. On macOS and Linux, SketchCraft finds either automatically. On Windows, version 0.3.1 doesn't find them yet, so DWG import and export don't work there; use DXF instead.
+- **DWG (AutoCAD)**: install [LibreDWG](https://www.gnu.org/software/libredwg/) (on macOS: `brew install libredwg`) or the free ODA File Converter. SketchCraft finds either automatically (on Windows, from version 0.3.2).
 - **IFC (Revit, ArchiCAD)**: SketchCraft uses [IfcOpenShell](https://ifcopenshell.org).
   - On macOS, opening an IFC file without it shows the two Terminal commands that set it up.
-  - On Windows, install it into a Python you have (`py -m pip install ifcopenshell`), then set the environment variable `SKETCHCRAFT_PYTHON` to that Python's `python.exe`, for example `C:\Users\you\AppData\Local\Programs\Python\Python312\python.exe`.
+  - On Windows (version 0.3.2 and later), it shows the Command Prompt steps instead. You can also install IfcOpenShell into any Python you have (`py -m pip install ifcopenshell`) and set the environment variable `SKETCHCRAFT_PYTHON` to that Python's `python.exe`.
 
 ## Build from source
 
