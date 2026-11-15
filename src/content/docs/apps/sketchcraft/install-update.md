@@ -43,8 +43,10 @@ sketchcraft run house.jsonl --save house.sketchcraft
 
 SketchCraft reads and writes DXF on its own. Two formats use a free helper you install once:
 
-- **DWG (AutoCAD)**: install [LibreDWG](https://www.gnu.org/software/libredwg/) (on macOS: `brew install libredwg`) or the free ODA File Converter. SketchCraft finds either automatically.
-- **IFC (Revit, ArchiCAD)**: SketchCraft uses [IfcOpenShell](https://ifcopenshell.org). If it isn't installed, opening an IFC file shows the two Terminal commands that set it up.
+- **DWG (AutoCAD)**: install [LibreDWG](https://www.gnu.org/software/libredwg/) (on macOS: `brew install libredwg`) or the free ODA File Converter. On macOS and Linux, SketchCraft finds either automatically. On Windows, version 0.3.1 doesn't find them yet, so DWG import and export don't work there; use DXF instead.
+- **IFC (Revit, ArchiCAD)**: SketchCraft uses [IfcOpenShell](https://ifcopenshell.org).
+  - On macOS, opening an IFC file without it shows the two Terminal commands that set it up.
+  - On Windows, install it into a Python you have (`py -m pip install ifcopenshell`), then set the environment variable `SKETCHCRAFT_PYTHON` to that Python's `python.exe`, for example `C:\Users\you\AppData\Local\Programs\Python\Python312\python.exe`.
 
 ## Build from source
 

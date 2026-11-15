@@ -79,4 +79,8 @@ Run it with `sketchcraft run house.jsonl`. The repository's `examples/` folder h
 
 ## AI agents over MCP
 
-`sketchcraft mcp --doc ~/Documents/SketchCraft/live.sketchcraft` starts a Model Context Protocol server with three tools: `sketchcraft_run` (run commands), `sketchcraft_render` (returns an image the agent can look at) and `sketchcraft_info`. The desktop app uses the same live file, so changes an agent makes appear in the app within a second, and yours appear to the agent.
+`sketchcraft mcp --doc <live file>` starts a Model Context Protocol server with three tools: `sketchcraft_run` (run commands), `sketchcraft_render` (returns an image the agent can look at) and `sketchcraft_info`. Give `--doc` the file the desktop app is using: `~/Documents/SketchCraft/live.sketchcraft`, or the path in the `SKETCHCRAFT_DOC` environment variable if you set one. Then changes an agent makes appear in the app within a second, and yours appear to the agent.
+
+:::caution
+The app and the agent each save the whole model after a change, and the last save wins. Take turns rather than editing in both at the same moment, and keep a copy of anything important.
+:::
