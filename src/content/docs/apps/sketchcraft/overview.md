@@ -11,7 +11,7 @@ SketchCraft is an independent, community-developed application created and maint
 
 SketchCraft is an open-source push/pull 3D modeler written in Rust. Draw an outline on the ground or on any face, pull it up into a solid, and keep shaping: cut a door into a wall, raise a ridge line into a gable roof, sweep trim around the eaves, and dimension the result as an elevation.
 
-![SketchCraft workspace showing a dimensioned two-story house with the outliner, floating toolbar, and shadows](/assets/uploads/sketchcraft/hero.webp)
+![SketchCraft workspace showing a dimensioned two-story Craftsman house with the outliner, view bar, finishes and shadows](/assets/uploads/sketchcraft/hero.webp)
 
 ## Features
 
